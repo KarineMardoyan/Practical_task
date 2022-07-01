@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+</style>
+
+<script>
+    //var id = ["bugs", "mentors", "hard", "tasty", "fruitful", "didIt"];
+    function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.style.display !== "none") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+<head>
+</head>
+
+<body style="background-color:rgb(112, 176, 236);">
+
+    <h1 style="color:midnightblue; text-align: center">
+        Hint: click on texts below
+    </h1>
+
+
+    <h1 style="color:midnightblue; text-align: center;" onclick="document.getElementById('we').src='#'">
+        First there were us separate from each other
+    </h1>
+
+    <img id="we" class="center">
+
+    <h1 style="color:midnightblue; text-align: center;" onclick="myFunction('bugs')">
+        And there were a lot of bugs everywhere
+    </h1>
+
+    <div id="bugs" class="row" style="display:none;">
+        <div class="column">
+            <img src="img/IMG_5041.jpeg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/IMJ_5010.JPG" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/IMG_5040.jpeg" height="250pt" width="330pt">
+        </div>
+        <div class="column">
+            <img src="img/IMG_5042.jpeg" height="250pt">
+        </div>
+    </div>
+
+    <h1 style="color:midnightblue; text-align: center;" onclick="myFunction('mentors')">
+        Then our mentors came!
+    </h1>
+
+    <div id="mentors" class="row" style="display:none;">
+        <div class="column">
+            <img src="https://img2.freepng.ru/20180615/tti/kisspng-computer-icons-person-selected-5b24074a635d27.849245951529087818407.jpg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="https://img2.freepng.ru/20180615/tti/kisspng-computer-icons-person-selected-5b24074a635d27.849245951529087818407.jpg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="https://img2.freepng.ru/20180615/tti/kisspng-computer-icons-person-selected-5b24074a635d27.849245951529087818407.jpg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="https://img2.freepng.ru/20180615/tti/kisspng-computer-icons-person-selected-5b24074a635d27.849245951529087818407.jpg" height="250pt">
+        </div>
+    </div>
+
+    <h1 style="color:midnightblue; text-align: center;">
+        And they sad!
+    </h1>
+
+    <h1 style="color:midnightblue; text-align: center" onclick="myFunction('hard')">
+        Let your course be hard and difficult!
+    </h1>
+
+    <div id="hard" class="row" style="display:none;">
+        <div class="column">
+            <img src="img/2.jpeg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/2.jpeg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/2.jpeg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/2.jpeg" height="250pt">
+        </div>
+    </div>
+
+    <h1 style="color:midnightblue; text-align: center;" onclick="myFunction('tasty')">
+        Let your course be tasty!
+    </h1>
+
+    <div id="tasty" class="row" style="display:none;">
+        <div class="column">
+            <img src="img/IMG_5018.jpg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/IMG_5021.jpg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/IMG_4920.JPG" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/IMG_5037.jpg" height="250pt">
+        </div>
+    </div>
+
+    <h1 style="color:midnightblue; text-align: center;" onclick="myFunction('fruitful')">
+        BUT!!!!!!! Let your course be fruitful!
+    </h1>
+
+    <div id="fruitful" class="row" style="display:none;">
+        <div class="column">
+            <img src="img/IMG_5022.jpg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/IMG_5019.jpg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/IMG_5020.jpg" height="250pt">
+        </div>
+        <div class="column">
+            <img src="img/IMG_5023.jpg" height="250pt">
+        </div>
+    </div>
+
+    <h1 style="color:midnightblue; text-align: center;" onclick="myFunction('didIt')">
+        And we DID it
+    </h1>
+
+    <div id="didIt" style="display:none">
+        <img class="center" style="width: 800px;" src="img/IMG_5017.jpg">
+    </div>
+
+</body>
+
+</html>
